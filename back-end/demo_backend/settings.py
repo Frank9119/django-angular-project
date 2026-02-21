@@ -135,3 +135,26 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8090",
+    "http://127.0.0.1:8090",
+    "http://localhost:4200",
+    "http://127.0.0.1:4200",
+
+]
+
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8090",
+    "http://127.0.0.1:8090",
+    "http://localhost:4200",
+    "http://127.0.0.1:4200",
+]
